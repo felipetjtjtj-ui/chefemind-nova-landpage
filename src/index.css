@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Sleek dark scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+/* Floating quantum animations */
+@keyframes quantum-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-1 {
+  animation: quantum-float 5.2s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: quantum-float 6s ease-in-out 1.2s infinite;
+}
+
+.animate-float-3 {
+  animation: quantum-float 5.6s ease-in-out 2.4s infinite;
+}
+
+.animate-float-1:hover,
+.animate-float-2:hover,
+.animate-float-3:hover {
+  animation-play-state: paused;
+}

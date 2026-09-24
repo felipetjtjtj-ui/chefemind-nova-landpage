@@ -1,0 +1,6 @@
+{
+  "name": "ChefeMind",
+  "description": "Landing Page Premium, Futurista e Cinematográfica para a ChefeMind - IA que atende, vende e faz seu restaurante crescer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
